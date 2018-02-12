@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with oXygen 6.2 -->
+<!-- Last update 6.43b by Zorba on 2007/04/22 -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="item">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="special" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="requires" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+			<xs:attribute name="mana" type="xs:int"/>
+			<xs:attribute name="life" type="xs:int"/>
+			<xs:attribute name="manaRegen" type="xs:int"/>
+			<xs:attribute name="hitRegen" type="xs:int"/>
+			<xs:attribute name="damage" type="xs:int"/>
+			<xs:attribute name="armor" type="xs:int"/>
+			<xs:attribute name="attackSpeed" type="xs:int"/>
+			<xs:attribute name="moveSpeed" type="xs:int"/>
+			<xs:attribute name="str" type="xs:int"/>
+			<xs:attribute name="agi" type="xs:int"/>
+			<xs:attribute name="int" type="xs:int"/>
+			<xs:attribute name="cost" type="xs:int" use="required"/>
+			<xs:attribute name="image"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="items">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="shop" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="version" type="xs:string"/>
+		</xs:complexType>
+		<xs:unique name="uniqueItemNames">
+			<xs:selector xpath="shop/item"/>
+			<xs:field xpath="@name"/>
+		</xs:unique>
+		<xs:unique name="uniqueShopNames">
+			<xs:selector xpath="shop"/>
+			<xs:field xpath="@name"/>
+		</xs:unique>
+		<xs:key name="itemKey">
+			<xs:selector xpath="shop/item"/>
+			<xs:field xpath="@name"/>
+		</xs:key>
+		<xs:keyref name="requiresValue" refer="itemKey">
+			<xs:selector xpath="shop/item/requires"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+	</xs:element>
+	<xs:element name="requires" type="xs:string"/>
+	<xs:element name="shop">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="item" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="specialType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Activate"/>
+			<xs:enumeration value="Aura"/>
+			<xs:enumeration value="Effect"/>
+			<xs:enumeration value="Orb"/>
+			<xs:enumeration value="Info"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="special">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="type" type="specialType" use="required"/>
+					<xs:attribute name="mana" type="xs:int"/>
+					<xs:attribute name="cooldown" type="xs:int"/>
+					<xs:attribute name="chance" type="xs:int"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Scite -->
+<!-- Last update 6.52d by Zorba on 2008/07/03 -->
+<!-- info in French at http://wikidota.org -->
+<?xml-stylesheet type="text/xsl" href="dota.xsl"?>
+<items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="dota.xsd" version="6.52d">
+	<shop name="Level 1 (Human) Recipes">
+		<item name="Perseverance" image="OrbOfFire.gif" cost="0"  damage="10" hitRegen="5" manaRegen="125">
+			<requires>Ring of Health</requires>
+			<requires>Void Stone</requires>
+		</item>
+		<item name="Headdress of Rejuvenation" image="INV_Helmet_17.gif" cost="225" agi="2" int="2" str="2">
+			<special type="Aura">+2 HP/Sec regen (500 AoE)</special>
+			<requires>Ring of Regeneration</requires>
+			<requires>Ironwood Branch</requires>
+		</item>
+		<item name="Netherezim Buckler" image="ThoriumArmor.gif" cost="200" armor="5" agi="2" str="2" int="2">
+			<special type="Activate" mana="10" cooldown="25">+ 2 armor for nearby units for 25 sec (700 AoE)</special>
+			<requires>Chain Mail</requires>
+			<requires>Ironwood Branch</requires>
+		</item>
+		<item name="Basilius" image="RingVioletSpider.gif" cost="0" damage="6">
+			<special type="Aura">Brilliance : +0.65 mana/sec to friendly units (900 AoE)</special>
+			<special type="Aura">Devotion : +3 armor (900 AoE)</special>
+			<requires>Sobi Mask</requires>
+			<requires>Ring of Protection</requires>
+		</item>
+		<item name="Boots of Travel" image="Ability_Rogue_Sprint.gif" cost="2200" moveSpeed="85">
+			<special type="Activate" mana="75" cooldown="60">Teleports to an allied unit or building</special>
+			<requires>Boots of Speed</requires>
+		</item>
+		<item name="Power Treads(agi)" image="WirtsLeg.gif" cost="350" moveSpeed="65" attackSpeed="30" agi="10">
+			<requires>Boots of Speed</requires>
+			<requires>Gloves of Haste</requires>
+			<requires>Boots of Elvenskin</requires>
+		</item>
+		<item name="Power Treads(int)" image="WirtsLeg.gif" cost="350" moveSpeed="65" attackSpeed="30" int="10">
+			<requires>Boots of Speed</requires>
+			<requires>Gloves of Haste</requires>
+			<requires>Robe of the Magi</requires>
+		</item>
+		<item name="Power Treads(str)" image="WirtsLeg.gif" cost="350" moveSpeed="65" attackSpeed="30" str="10">
+			<requires>Boots of Speed</requires>
+			<requires>Gloves of Haste</requires>
+			<requires>Belt of Giant Strength</requires>
+		</item>
+		<item name="Hands of Midas" image="GoldGloves.gif" cost="1400" attackSpeed="30">
+			<special type="Activate" mana="25" cooldown="100">Transmutes a creep with level &lt; 5 to gold</special>
+			<requires>Gloves of Haste</requires>
+		</item>
+		<item name="Oblivion Staff" image="INV_Mace_10.gif" cost="0" int="6" attackSpeed="10" damage="15" manaRegen="75">
+			<requires>Quarter Staff</requires>
+			<requires>Robe of the Magi</requires>
+			<requires>Sobi Mask</requires>
+		</item>
+		<item name="Bracer" image="RunedBracers.gif" cost="175" agi="3" int="3" str="6">
+			<requires>Circlet of Nobility</requires>
+			<requires>Gauntlets of Strength</requires>
+		</item>
+		<item name="Wraith Band" image="Revenant.gif" cost="125" agi="6" int="3" str="3">
+			<requires>Circlet of Nobility</requires>
+			<requires>Slippers of Agility</requires>
+		</item>
+		<item name="Null Talisman" image="Talisman.gif" cost="175" agi="3" int="6" str="3">
+			<requires>Circlet of Nobility</requires>
+			<requires>Mantle of Intelligence</requires>
+		</item>
+	</shop>
+	<shop name="Level 2 (Orc) Recipes">
+		<item name="Yasha" image="INV_Sword_10.gif" cost="800" agi="16" moveSpeed="10" attackSpeed="10">
+			<requires>Blade of Alacrity</requires>
+			<requires>Boots of Elvenskin</requires>
+		</item>
+		<item name="Sange" image="JapaneseSword.gif" cost="800" str="16" damage="10">
+			<special type="Orb" chance="10">Maim :+30 dmg, -35% attack and movement speed for 6 secondes</special>
+			<requires>Ogre Axe</requires>
+			<requires>Belt of Giant Strength</requires>
+		</item>
+		<item name="Cranium Basher" image="INV_Hammer_10.gif" cost="1460" damage="30" str="3">
+			<special type="Effect">Bash : 15% Chance (10% for Ranged), 1.1 Second Stun</special>
+			<special type="Info">+25 bonus dmg on Bash</special>
+			<requires>Mithril Hammer</requires>
+			<requires>Gauntlets of Strength</requires>
+		</item>
+		<item name="Blade Mail" image="INV_Chest_Plate06.gif" cost="500" armor="5" damage="15">
+			<special type="Effect">Returns 20% dmg to melee attacker</special>
+			<special type="Info">Blade Mails stack additively</special>
+			<requires>Blades of Attack</requires>
+			<requires>Chain Mail</requires>
+		</item>
+		<item name="Maelestrom" image="StormHammer.gif" cost="1300" agi="6" damage="25">
+			<special type="Orb" chance="20">Chain ligthning dealing 150 dmg to 3 targets</special>
+			<requires>Boots of Elvenskin</requires>
+			<requires>Mithril Hammer</requires>
+		</item>
+		<item name="Diffusal Blade" image="INV_Sword_11.gif" cost="1550" agi="15" int="6">
+			<special type="Activate" mana="0" cooldown="12">Purge (10 charges) for 4 seconds (600 range)</special>
+			<special type="Orb">Feedback 18 Mana Burned per attack to heroes</special>
+			<requires>Blade of Alacrity</requires>
+			<requires>Robe of the Magi</requires>
+		</item>
+		<item name="Helm of the Dominator" image="INV_Helmet_13.gif" cost="0" damage="20" armor="5">
+			<special type="Activate" mana="75" cooldown="300">Controls a creep for 20 minutes (700 range)</special>
+			<special type="Orb" chance="100">15% Lifesteal</special>
+			<requires>Helm of Iron Will</requires>
+			<requires>Mask of Death</requires>
+		</item>
+		<item name="Mask of Madness" image="HelmOfValor.gif" cost="1050">
+			<special type="Orb" chance="100">17% Lifesteal</special>
+			<special type="Activate" mana="25" cooldown="30">Frenzy during 12 seconds : +75% attack speed, +15% run speed, dmg received +20%</special>
+			<requires>Mask of Death</requires>
+		</item>
+		<item name="Eul's Scepter of Divinity" image="Staffofpurification.gif" cost="800" int="16" manaRegen="100" moveSpeed="20">
+			<special type="Activate" cooldown="30" mana="75">Cyclone, 2.5 seconds duration (600 range)</special>
+			<requires>Robe of the Magi</requires>
+			<requires>Staff of Wizardry</requires>
+			<requires>Void Stone</requires>
+		</item>
+		<item name="Soul Booster" image="PhilosophersStone.gif" cost="0" life="450" mana="400" manaRegen="10" hitRegen="1">
+			<requires>Vitality Booster</requires>
+			<requires>Energy Booster</requires>
+			<requires>Point Booster</requires>
+		</item>
+		<item name="Mekansm" image="SpellShieldAmulet.gif" cost="900" int="5" agi="5" str="5" armor="5">
+			<special type="Aura">+3 HP/sec to nearby units</special>
+			<special type="Activate" cooldown="45" mana="150">Gives +2 armor and 250 hp AoE heal to friendly units</special>
+			<requires>Headdress of Rejuvenation</requires>
+			<requires>Netherezim Buckler</requires>
+		</item>
+	</shop>
+	<shop name="Level 3 (Night Elf) Recipes">
+		<item name="Sange and Yasha" image="Spell_Holy_BlessingOfStrength.gif" cost="800" agi="16"
+			str="16" damage="15" moveSpeed="15" attackSpeed="15">
+			<special type="Orb" chance="15">Maim :  -35% attack and movement speed for 6 seconds</special>
+			<requires>Sange</requires>
+			<requires>Yasha</requires>
+		</item>
+		<item name="Stygian Desolator" image="Ability_Gouge.gif" cost="1200" damage="60">
+			<special type="Orb">Corruption :  -6 armor to enemy target, 5 sec duration</special>
+			<requires>Mithril Hammer</requires>
+			<requires>Mithril Hammer</requires>
+		</item>
+		<item name="Battle Fury" image="INV_ThrowingAxe_06.gif" cost="0" damage="65" manaRegen="150" hitRegen="6">
+			<special type="Effect">gives splash attack : 35% dmg (225 AoE)</special>
+			<requires>Claymore</requires>
+			<requires>Broadsword</requires>
+			<requires>Perseverance</requires>
+		</item>
+		<item name="Crystalys" image="ThoriumMelee.gif" cost="500" damage="35">
+			<special type="Effect" chance="10">1.75x critical strike</special>
+			<requires>Broadsword</requires>
+			<requires>Blades of Attack</requires>
+		</item>
+		<item name="Black King Bar" image="RodOfNecromancy.gif" cost="1600" str="10" damage="18">
+			<special type="Activate" cooldown="85">Avatar (Immue to most magic spells) for 9 sec</special>
+			<requires>Ogre Axe</requires>
+			<requires>Broadsword</requires>
+		</item>
+		<item name="Manta Style" image="INV_ThrowingAxe_02.gif" cost="1400" agi="23" int="6" life="250">
+			<special type="Activate" cooldown="40" mana="165">Creates 2 illusions which deal 40% dmg and receive 300% dmg for 20 sec</special>
+			<special type="Orb">Feedback : burns 36 mana</special>
+			<requires>Vitality Booster</requires>
+			<requires>Diffusal Blade</requires>
+		</item>
+		<!-- item name="Aegis of the Immortal" image="ArcaniteArmor.gif" cost="0">
+			<special type="Effect"> Reincarnation (1 charge)</special>
+			<special type="Info">Note: This item can only be obtained by killing Roshan.</special>
+		</item -->
+		<item name="Lothar's Edge" image="INV_Axe_16.gif" cost="650" agi="21" damage="21">
+			<special type="Activate" mana="50" cooldown="17">Windwalk for 9 seconds (+20% run speed)</special>
+			<special type="Info">Item can't be dropped</special>
+			<requires>Blade of Alacrity</requires>
+			<requires>Blade of Alacrity</requires>
+			<requires>Claymore</requires>
+		</item>
+		<item name="Dagon" image="INV_Wand_06.gif" cost="1350" int="15" damage="9" agi="3" str="3">
+			<special type="Activate" cooldown="40" mana="245">400 dmg ligthning (600 range)</special>
+			<special type="Info">Upgrade with Dagon Recipe
+				+100 dmg per upgrade (800 dmg max.)
+				+20 mana cost per upgrade (325 mana max.)
+				Each upgrade gives +2 intelligence</special>
+			<requires>Staff of Wizardry</requires>
+			<requires>Blades of Attack</requires>
+		</item>
+		<item name="Necronomicon" image="NecromancerAdept.gif" cost="1300" int="15" str="6">
+			<special type="Activate" cooldown="90" mana="50">Raise dead, summons 1 Necronomicon Archer and a Necronomicon Warrior for 35 seconds.</special>
+			<special type="Info">Necronomcion Archer (400/600/800 hp, 31/61/91 piercing dmg, 350 range, 6/8/10 armor) : has Endurance aura (300 AoE) : 3/6/9% run speed and attack speed, and the ability to mana burn 200/250/300 MP</special>
+			<special type="Info">Necronomicon Warrior (400/600/800 hp, 21/41/61 dmg, 6/8/10 armor) : can burn and deal 25/50/75 MP/HP at the same time, and has the ability to deal 200/400/600 dmg to the unit that kills it. They have 1300/1400/1500 vision range.
+				Necronomicon Warriors have 40% resistance to magic spells. Level 3 Necronomicon Warrior has true sight</special>
+			<special type="Info">Can be upgraded by repurchasing the Recipe Scroll; 2 ugrades maximum :	+6/10/14 str, +15/21/24 int</special>
+			<special type="Info">Cannot be dropped</special>
+			<requires>Staff of Wizardry</requires>
+			<requires>Belt of Giant Strength</requires>
+		</item>
+		<item name="Linken's Sphere" image="OrbofWater.gif" cost="1325" hitRegen="6" manaRegen="150" agi="15" int="15" str="15">
+			<special type="Effect">Passivly blocks most targeted spells once every 20 seconds</special>
+			<requires>Perseverance</requires>
+			<requires>Ultimate Orb</requires>
+		</item>
+	</shop>
+	<shop name="Level 4 (Undead) Recipes">
+		<item name="Divine Rapier" image="INV_Sword_25.gif" cost="0" damage="250">
+			<special type="Info">Cannot be dropped or sold. Drops if beare dies</special>
+			<requires>Sacred Relic</requires>
+			<requires>Demon's Edge</requires>
+			<requires>Claymore</requires>
+		</item>
+		<item name="Buriza do Kyanon" image="INV_Weapon_Crossbow_10.gif" cost="1000" damage="75">
+			<special type="Effect" chance="20">2.2x Critical Strike</special>
+			<requires>Demon's Edge</requires>
+			<requires>Crystalys</requires>
+		</item>
+		<item name="Monkey King Bar" image="INV_Weapon_Halberd_10.gif" cost="0" damage="75" attackSpeed="15">
+			<special type="Effect" chance="30">deal +100 bonus dmg and stun for 0.01 seconds (to interrupt channeling)</special>
+			<requires>Javelin</requires>
+			<requires>Javelin</requires>
+			<requires>Demon's Edge</requires>
+		</item>
+		<item name="Radiance" image="Transmute.gif" cost="1525" damage="60">
+			<special type="Info">+8% Evasion</special>
+			<special type="Effect">Immolation : 35 dmg/sec (550 AoE)</special>
+			<requires>Sacred Relic</requires>
+		</item>
+		<item name="Heart of Tarrasque" image="HeartOfAszune.gif" cost="1200" str="35" hitRegen="11" life="300">
+			<requires>Messerschmidt's Reaver</requires>
+			<requires>Vitality Booster</requires>
+		</item>
+		<item name="Satanic" image="HornOfDoom.gif" cost="1100" str="25" armor="5">
+			<special type="Orb">25% Lifesteal</special>
+			<special type="Activate" mana="0" cooldown="50">Unholy Rage (Extra Lifesteal: +15%, dmg : +30) for 20 seconds</special>
+			<requires>Helm of the Dominator</requires>
+			<requires>Messerschmidt's Reaver</requires>
+		</item>
+		<item name="Eye of Skadi" image="IceShard.gif" cost="1250" agi="25" int="25" str="25" life="200" mana="150">
+			<special type="Orb">Frost attack : -30% run speed and -20% attack speed</special>
+			<special type="Info">Ranged Eye of Skadi is NOT an orb effect !</special>
+			<requires>Ultimate Orb</requires>
+			<requires>Ultimate Orb</requires>
+			<requires>Point Booster</requires>
+		</item>
+		<item name="The Butterfly" image="INV_ThrowingKnife_04.gif" cost="1800" agi="30" damage="30" attackSpeed="30">
+			<special type="Effect" chance="30">Evasion (dodge attacks)</special>
+			<requires>Eaglehorn</requires>
+			<requires>Quarter Staff</requires>
+		</item>
+		<item name="Aghanim's Scepter" image="INV_Wand_05.gif" cost="0" int="30" life="500" mana="500">
+			<special type="Effect">Improves the ultimates of some heroes</special>
+			<special type="Info">Cannot  be dropped</special>
+			<requires>Mystic Staff</requires>
+			<requires>Soul Booster</requires>
+		</item>
+		<item name="Refresher Orb" image="HeartOfSearinox.gif" cost="1875" hitRegen="5" manaRegen="150" damage="40">
+			<special type="Activate" mana="375" cooldown="210">Refreshes the cooldown of all spells</special>
+			<requires>Perseverance</requires>
+			<requires>Oblivion Staff</requires>
+		</item>
+		<item name="Guinsoo's Scythe of Vyse" image="INV_Sword_09.gif" cost="0" int="35" str="10" agi="10" manaRegen="200">
+			<special type="Activate" cooldown="20" mana="100">Turns an ennemy to sheep for 3.5 sec (600 range)</special>
+			<requires>Mystic Staff</requires>
+			<requires>Ultimate Orb</requires>
+			<requires>Void Stone</requires>
+		</item>
+	</shop>
+	<shop name="New recipes">
+		<item name="Vanguard" image="AdvancedUnholyArmor.gif" cost="0" hitRegen="5" life="250">
+			<special type="Effect" chance="65">block 40 dmg</special>
+			<requires>Ring of Health</requires>
+			<requires>Vitality Booster</requires>
+			<requires>Stout Shield</requires>
+		</item>
+		<item name="Arcane Ring" image="ArcaneRing.gif" cost="525" armor="3" mana="300">
+			<special type="Activate" mana="25" cooldown="33">Restore 135 mana around the caster (400 AoE)</special>
+			<requires>Energy Booster</requires>
+			<requires>Ring of Protection</requires>
+		</item>
+		<item name="Mjollnir" image="Mjollnir.gif" cost="0" agi="35" damage="35">
+			<special type="Effect" chance="20">200 dmg Chain Lightning</special>
+			<special type="Effect" chance="20">200 dmg Static Charge will strike the attacking unit</special>
+			<requires>Maelestrom</requires>
+			<requires>Eaglehorn</requires>
+		</item>
+		<item name="Crow Courier" image="RavenForm.gif" cost="200">
+			<special type="Info">Creates a small very fast flying unit that can carry items to and from your base. If it dies the items will fall to the ground. Has magic immunity, high mana, hitpoints and armor. Cannot carry Gem. Can cast Burst.</special>
+			<requires>Animal Courier</requires>
+		</item>
+		<item name="Vladmir's Offering" image="CloakOfFlames.gif" cost="300">
+			<special type="Aura">16% Lifesteal (melee)</special>
+			<special type="Aura">+15% Damage</special>
+			<special type="Aura">+0.8 mana/sec</special>
+			<special type="Aura">+5 armor</special>
+			<requires>Basilius</requires>
+			<requires>Mask of Death</requires>
+			<requires>Ring of Regeneration</requires>
+		</item>
+		<item name="Assault Cuirass" image="assaultcuirass.gif" cost="2000" armor="10" attackSpeed="40">
+			<special type="Aura">+5 armor (allies) ; -5 armor (enemies)</special>
+			<special type="Aura">+15% attack speed</special>
+			<requires>Plate Mail</requires>
+			<requires>Hyperstone</requires>
+			<requires>Chain Mail</requires>
+		</item>
+		<item name="Bloodstone" image="bloodstone.gif" cost="0" life="450" mana="400" manaRegen="200" hitRegen="6">
+			<special type="Effect">-If the bearer dies, he restores 450 HP/400 Mana to nearby allies. (stack = 40 max)
+				-The hero gains EXP and vision of the area where he died until he revives.
+				-Hero will respawn 20% faster and lose 40% less gold.
+				-If the item has no charges, the on-death bonus will be cut in half.
+				-Charges are gained/lost by killing heroes/dying.</special>
+			<requires>Soul Booster</requires>
+			<requires>Perseverance</requires>
+		</item>
+		<item name="Hood of Defiance(1)" image="hoodofcunning.gif" cost="0" hitRegen="8">
+			<special type="Effect">30% Spell Reduction</special>
+			<requires>Helm of Iron Will</requires>
+			<requires>Planeswalker Cloak</requires>
+			<requires>Ring of Health</requires>
+		</item>
+		<item name="Hood of Defiance(2)" image="hoodofcunning.gif" cost="0" hitRegen="8">
+			<special type="Effect">30% Spell Reduction</special>
+			<requires>Helm of Iron Will</requires>
+			<requires>Planeswalker Cloak</requires>
+			<requires>Ring of Regeneration</requires>
+			<requires>Ring of Regeneration</requires>
+		</item>
+		<item name="Armlet of Mordiggian" image="UnholyStrength.gif" cost="700" damage="9" attackSpeed="15" armor="5" hitRegen="3">
+			<special type="Activate" cooldown="10">Unholy Strength (+31 dmg, +25 str, -35 hp/sec !)</special>
+			<requires>Helm of Iron Will</requires>
+			<requires>Gloves of Haste</requires>
+			<requires>Blades of Attack</requires>
+		</item>
+		<item name="Shiva's Guard" image="AdvancedMoonArmor.gif" cost="600" int="30" armor="15">
+			<special type="Aura">Freezing : -25% AS</special>
+			<special type="Activate" mana="100" cooldown="30">Arctic Blast : -40% MS for 4 secondes and dealing 200 damage (750 AoE)</special>
+			<requires>Plate Mail</requires>
+			<requires>Mystic Staff</requires>
+		</item>
+		<item name="Orchid Malevolence" image="StaffOfSilence.gif" cost="0" int="20" attackSpeed="30" damage="40" manaRegen="225">
+			<special type="Activate" mana="200" cooldown="25">Soul Burn : silence and amplifies damage by 20% for 5 secondes to enemy target</special>
+			<requires>Oblivion Staff</requires>
+			<requires>Oblivion Staff</requires>
+			<requires>Oblivion Staff</requires>
+		</item>
+	</shop>
+	<shop name="Sena The Accessorizer">
+		<item name="Gauntlets of Strength" image="GauntletsOfOgrePower.gif" cost="150" str="3"/>
+		<item name="Slippers of Agility" image="SlippersOfAgility.gif" cost="150" agi="3"/>
+		<item name="Mantle of Intelligence" image="MantleOfIntelligence.gif" cost="150" int="3"/>
+		<item name="Ironwood Branch" image="NatureTouchGrow.gif" cost="57" str="1" agi="1" int="1"/>
+		<item name="Belt of Giant Strength" image="Belt.gif" cost="450" str="6"/>
+		<item name="Boots of Elvenskin" image="Boots.gif" cost="450" agi="6"/>
+		<item name="Robe of the Magi" image="RobeOfTheMagi.gif" cost="450" int="6"/>
+		<item name="Circlet of Nobility" image="Circlet.gif" cost="185" str="2" agi="2" int="2"/>
+		<item name="Ogre Axe" image="SpiritWalkerAdeptTraining.gif" cost="1000" str="10"/>
+		<item name="Blade of Alacrity" image="INV_ThrowingKnife_03.gif" cost="1000" agi="10"/>
+		<item name="Staff of Wizardry" image="WandOfCyclone.gif" cost="1000" int="10"/>
+		<item name="Ultimate Orb" image="OrbofSlowness.gif" cost="2100" str="10" agi="10" int="10"/>
+	</shop>
+	<shop name="Beazel The Weapons Dealer">
+		<item name="Blades of Attack" cost="650" image="ClawsOfAttack.gif" damage="9"/>
+		<item name="Broadsword" cost="1200" image="SteelMelee.gif" damage="18"/>
+		<item name="Quarter Staff" cost="900" image="AlleriaFlute.gif" damage="10" attackSpeed="10"/>
+		<item name="Claymore" cost="1400" image="INV_Sword_19.gif" damage="21"/>
+		<item name="Ring of Protection" cost="175" image="RingGreen.gif" armor="2"/>
+		<item name="Stout Shield" cost="300" image="ImprovedUnholyArmor.gif">
+			<special type="Effect" chance="40">block 30 dmg</special>
+		</item>
+		<item name="Javelin" cost="1400" image="SteelRanged.gif" damage="16">
+			<special type="Effect" chance="20">+40 dmg</special>
+		</item>
+		<item name="Mithril Hammer" cost="1610" image="Hammer.gif" damage="24"/>
+		<item name="Chain Mail" cost="620" image="INV_Chest_Chain_12.gif" armor="5"/>
+		<item name="Helm of Iron Will" cost="950" image="HelmutPurple.gif" armor="5" hitRegen="3"/>
+		<item name="Plate Mail" cost="1400" image="INV_Chest_Plate13.gif" armor="10"/>
+	</shop>
+	<shop name="Cache of the Quel'thelan">
+		<item name="Gloves of Haste" image="Glove.gif" cost="550" attackSpeed="15"/>
+		<item name="Mask of Death" image="UndeadShrine.gif" cost="900">
+			<special type="Orb">10% Life Steal</special>
+		</item>
+		<item name="Ring of Regeneration" image="RingSkull.gif" cost="375" hitRegen="2"/>
+		<item name="Kelens Dagger of Escape" image="DaggerOfEscape.gif" cost="2150">
+			<special type="Activate" mana="90" cooldown="30">Blink (1200 range)</special>
+		</item>
+		<item name="Sobi Mask" image="SobiMask.gif" cost="325" manaRegen="50"/>
+		<item name="Boots of Speed" image="BootsOfSpeed.gif" cost="500" moveSpeed="50"/>
+		<item name="Gem of True Sight" image="Gem.gif" cost="750">
+			<special type="Info">Reveals invisible units; drops if beare dies</special>
+		</item>
+		<item name="Planeswalker Cloak" cost="650" image="INV_Misc_Cape_08.gif">
+			<special type="Info">+15% spell resistance</special>
+		</item>
+	</shop>
+	<shop name="Chimaera Roost">
+		<item name="Lesser Clarity Potion" image="LesserClarityPotion.gif" cost="50">
+			<special type="Info">Activated (1 charge) : Regenerate 100 mana over 30 secondes</special>
+		</item>
+		<item name="Flask of Sapphire Water" image="PotionBlueBig.gif" cost="100">
+			<special type="Info">Activated (1 charge) : Regenerate 400 HP over 10 secondes</special>
+		</item>
+		<item name="Ancient Tango of Essifation" image="AncientOfTheEarth.gif" cost="90">
+			<special type="Info">Activated (2 charges) : Eat tree to gain 175 HP over 25 secondes</special>
+		</item>
+		<item name="Empty Bottle" image="Bottle0.gif" cost="600">
+			<special type="Info">Can store fountain of health water for up to 3 uses, healing 135 hp and 70 mana over 3 seconds. Alternately, it can store runes for up to 2 minutes.</special>
+		</item>
+		<item name="Observer Wards" image="SentryWard.gif" cost="200">
+			<special type="Info">Activated (2 charges) : Summon ward to spy, last 6 minutes (do not have true sight)</special>			
+		</item>
+		<item name="Sentry Wards" image="BlueSentryWard.gif" cost="200">
+			<special type="Info">Activated (2 charges) : Summon limited vision ward, last 6 minutes (have true sight)</special>			
+		</item>
+		<item name="Scroll of Town Portal" image="ScrollUber.gif" cost="135">
+			<special type="Info">Activated (1 charge) : Transport to a friendly town unit</special>
+		</item>
+		<item name="Animal Courier" image="CritterChicken.gif" cost="225">
+			<special type="Info">Activated (1 charge) : Summons courier unit</special>			
+		</item>
+	</shop>
+	<shop name="Leragas The Vile">
+		<item name="Demon's Edge" image="FrostMourne.gif" cost="2600" damage="36"/>
+		<item name="Eaglehorn" image="INV_Weapon_Bow_06.gif" cost="3300" agi="25"/>
+		<item name="Messerschmidt's Reaver" image="SpiritWalkerMasterTraining.gif" cost="3200" str="25"/>
+		<item name="Sacred Relic" image="StaffOfTeleportation.gif" cost="3800" damage="60"/>
+		<item name="Hyperstone" image="Periapt1.gif" cost="2100" attackSpeed="55"/>
+		<item name="Ring of Health" image="GoldRing.gif" cost="875" hitRegen="5"/>
+		<item name="Void Stone" image="Periapt.gif" cost="875" manaRegen="100"/>
+		<item name="Mystic Staff" image="StaffOfNegation.gif" cost="2700" int="25"/>
+		<item name="Energy Booster" image="EnchantedGemstone.gif" cost="1000" mana="250"/>
+		<item name="Point Booster" image="UsedSoulGem.gif" cost="1200" life="200" mana="150"/>
+		<item name="Vitality Booster" image="SoulGem.gif" cost="1100" life="250"/>
+	</shop>
+</items>
